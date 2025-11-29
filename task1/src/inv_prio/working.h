@@ -22,3 +22,4 @@ void working(int process_id);
 void *server(void *arg);   // низкий приоритет: удерживает мьютекс ресурса
 void *t1(void *arg);       // средний приоритет: CPU-bound
 void *t2(void *arg);       // высокий приоритет: ждёт мьютекс
+int init_resource_mutex(int protocol_type);
